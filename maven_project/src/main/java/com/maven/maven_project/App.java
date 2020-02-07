@@ -4,12 +4,12 @@ public class App
 {
     public static void main( String[] args )
     {
-    	int NOO;
+    	int n;
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the Number of Gifts to be Created: ");
         NOO=sc.nextInt();
-        GiftBox pack[]=new GiftBox[NOO];
-        for(int i=0;i<NOO;i++) {
+        GiftBox pack[]=new GiftBox[n];
+        for(int i=0;i<n;i++) {
         	int i1=0,i2=0,i3=0;
         	String s="",c="",cs="";
         	System.out.print("Enter About Sweet in the Box(Name&Weight) "+(i+1));
@@ -29,7 +29,7 @@ public class App
         int choice=sc.nextInt();
         switch(choice)
         {
-               case 1:for(int i=0;i<NOO;i++)
+               case 1:for(int i=0;i<n;i++)
                      {
              	         System.out.print("Total weight in "+(i+1)+" gift:");
              	         System.out.println(pack[i].total);
@@ -48,7 +48,7 @@ public class App
                       switch(c)
                       {
                              case 1:int x=0;
-                             		for(int i=0;i<NOO;i++)
+                             		for(int i=0;i<n;i++)
                              		{
                              			if(pack[i].total>=d && pack[i].total<=e)
                              			{
@@ -62,7 +62,7 @@ public class App
                              		}
                              		break;
                              case 2:int xx=0;
-                                    for(int i=0;i<NOO;i++)
+                                    for(int i=0;i<n;i++)
                                     {
                         	                if(pack[i].getSweetWeight()>=d && pack[i].getSweetWeight()<=e)
                         	                {
@@ -76,7 +76,7 @@ public class App
                                	    }
                                     break;
                              case 3:int xxx=0;
-                                    for(int i=0;i<NOO;i++)
+                                    for(int i=0;i<n;i++)
                                     {
                  	                     if(pack[i].getChocolateWeight()>=d && pack[i].getChocolateWeight()<=e)
                  	                     {
@@ -90,7 +90,7 @@ public class App
                                     }
                                     break;
                              case 4:int xxxx=0;
-                                    for(int i=0;i<NOO;i++)
+                                    for(int i=0;i<n;i++)
                                     {
                  	                     if(pack[i].getCandiesWeight()>=d && pack[i].getCandiesWeight()<=e)
                  	                     {
